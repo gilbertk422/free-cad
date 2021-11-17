@@ -1,0 +1,38 @@
+.Settings{
+    padding:20px;
+    display:flex;
+    justify-content: flex-start;
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+    .Menu{
+        width:20%;
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0; 
+            color:orange;
+            li{
+                .settingTab{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color:#000;
+                }
+            }   
+        }
+    }
+    .Content{
+        width:80%;
+        margin-left:80px;
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+}

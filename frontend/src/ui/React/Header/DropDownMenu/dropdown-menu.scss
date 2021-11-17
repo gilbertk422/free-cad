@@ -1,0 +1,111 @@
+@import "theme.scss";
+
+.DropDownMenu{
+    padding:0;
+    margin:0;
+    background-color:$base-color;
+
+    display: flex;
+    justify-content: space-between;
+
+
+    .Menu{
+        position: relative;
+        display: inline-block;
+
+        .btn {
+            margin: 0px;
+            width: 80px;
+            padding-top: 2px;
+            padding-bottom: 5px;
+
+            text-align: center;
+            border-top: 3px solid transparent;
+
+            background: transparent;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: $additional-color;
+
+            &:hover {
+                border-top: 3px solid $additional-color;
+                cursor: pointer;
+            }
+
+            &:before {
+                // content:"";
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                border: 10px solid;
+                border-color: white transparent transparent transparent;
+                right: 6px;
+                top: 16px;
+            }
+
+            ul {
+                text-align: left;
+                font-size: 16px;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                top: 28px;
+                width: 210px;
+                background-color: white;
+                position: absolute;
+
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 10;
+
+                .SubMenuBtn{
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                li {
+                    padding: 6px 16px;
+                    border-bottom: 1px solid #e5e5e5;
+                    border-left: 2px solid transparent;
+                    font-family: Arial, Helvetica, sans-serif;
+
+                    &:hover {
+                        background-color: #e5e5e5;
+                        color: white;
+                        border-left: 2px solid $base-color;
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    a {
+                        color: grey;
+                        text-decoration: none;
+                    }
+
+                    .SubMenu{
+                        position: relative;
+                        top: -25px;
+                        right: -192px;
+                        height: 0px;
+
+                        ul{
+                            top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .logoBlock{
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+
+        img{
+            height:25px;
+        }
+    }
+}

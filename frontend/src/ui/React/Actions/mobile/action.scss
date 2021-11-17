@@ -1,0 +1,45 @@
+
+.actionBlock {
+  display: flex;
+  height: 30px;
+  margin: 2px;
+
+  .inputGroup{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    input {
+      width: 85px;
+    }
+
+    &>div{
+      display: flex;
+      align-items: center;
+    }
+
+  }
+
+
+
+  button {
+    display: inline;
+    padding: 0px;
+    width: 30px;
+    padding-top: 2px;
+    background-color: rgba(240, 240, 240, 0.85);
+    border: none;
+    margin-right: 5px;
+  }
+
+  select {
+    display: block;
+    border-radius: 3px;
+    color: #4d4e4e;
+    background-color: #dddddd;
+    outline: none;
+    width: 158px;
+  }
+
+}
+
+

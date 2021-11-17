@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.1">
+ <View Type="Top">
+	<Region BaseHeight="0" Z="1.5875">
+		<Machine Id="41" Name="Auto"/>
+		<Contour>
+			<Straight P1="-364.352081,135.192897" P2="-364.352081,45.192897"/>
+			<Arc Center="-359.352081,45.192897" Radius="5" StartAngle="180" IncAngle="90"/>
+			<Straight P1="-359.352081,40.192897" P2="-269.352081,40.192897"/>
+			<Arc Center="-269.352081,45.192897" Radius="5" StartAngle="270" IncAngle="90"/>
+			<Straight P1="-264.352081,45.192897" P2="-264.352081,135.192897"/>
+			<Arc Center="-269.352081,135.192897" Radius="5" StartAngle="0" IncAngle="90"/>
+			<Straight P1="-269.352081,140.192897" P2="-359.352081,140.192897"/>
+			<Arc Center="-359.352081,135.192897" Radius="5" StartAngle="90" IncAngle="90"/>
+		</Contour>
+	</Region>
+	<Region BaseHeight="1.5875" Z="AirInside" BottomType="Drill" ThroughHole="">
+		<Machine Id="41" Name="Auto"/>
+		<Contour>
+			<Circle Center="-345.812776,121.237432" Radius="5.904003"/>
+		</Contour>
+	</Region>
+	<Region BaseHeight="1.5875" Z="AirInside" ThroughHole="">
+		<Machine Id="41" Name="Auto"/>
+		<Contour>
+			<Spline P1="-305.696256,46.331059" P2="-298.398609,62.927324" P3="-279.20281,42.885025" P4="-271.905162,59.481289"/>
+			<Spline P1="-271.905162,59.481289" P2="-288.501426,66.778937" P3="-268.459128,85.974736" P4="-285.055392,93.272383"/>
+			<Spline P1="-285.055392,93.272383" P2="-292.35304,76.676119" P3="-311.548838,96.718417" P4="-318.846486,80.122153"/>
+			<Spline P1="-318.846486,80.122153" P2="-302.250222,72.824506" P3="-322.29252,53.628707" P4="-305.696256,46.331059"/>
+		</Contour>
+	</Region>
+	<Region BaseHeight="0" Z="-1">
+		<Machine Id="14" Name="Comment" CTM="0"/>
+		<Contour>
+			<Text Position="-307.860218,130.559114" Height="5" FontName="" HFlip="0" VFlip="0" Angle="0">text message</Text>
+		</Contour>
+	</Region>
+ </View>
+ <QuantityOfParts Value="10"/>
+</eMachineShop3DObjects>

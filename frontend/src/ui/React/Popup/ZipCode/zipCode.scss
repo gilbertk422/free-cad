@@ -1,0 +1,52 @@
+#zip-code-modal{
+    #alert-dialog-title{
+      padding-left: 24px;
+    }
+
+
+    .message{
+        display: flex;
+        justify-content: space-between;
+
+        svg{
+            width: 46px;
+            height: 46px;
+        }
+    }
+
+    .input-field{
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        label{
+            width: 100px;
+            text-align: right;
+        }
+
+        &>div{
+            flex-grow: 9;
+            margin-left: 5px;
+        }
+
+        select, input{
+            width: 80%;
+        }
+
+        select{
+            display: block;
+            margin-left: 2px;
+            border-radius: 3px;
+            color: #4d4e4e;
+            background-color: #dddddd;
+            outline: none;
+            font-size: 18px;
+            padding: 3px;
+        }
+
+        input{
+            line-height: 30px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+    }
+}

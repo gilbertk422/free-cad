@@ -1,0 +1,29 @@
+.Bend {
+  .BendTitle {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left:10px;
+
+  }
+  .LinePart {
+    .BendTitle2 {
+      text-align: left;
+    }
+    .BendPreview {
+      display: flex;
+      .BendFieldSet {
+        width: 40%;
+
+        .InputAngleGroup {
+          display: flex;
+          justify-content: space-around;
+          margin: 10px;
+        }
+      }
+      .PreviewFieldSet {
+        width: 60%;
+      }
+    }
+  }
+}

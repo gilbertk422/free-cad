@@ -1,0 +1,109 @@
+.PriceContent {
+  .Quantity,
+  .MachiningGrid,
+  .ShipVia,
+  .Shipping,
+  .Tax,
+  .Checkbox,
+  .SetupCost,
+  .Total {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+    .LabelQuantity,
+    .LabelMachining,
+    .LabelShipVia,
+    .LabelShipping,
+    .LabelSetupCost,
+    .LabelTax,
+    .LabelCheckbox,
+    .LabelTotal {
+      color: #000;
+      font-size: bold;
+      width: 100px;
+      text-align: right;
+      margin-right: 10px;
+
+      @media (max-width: 600px) {
+        text-align: left;
+      }
+    }
+
+    select{
+      display: inline-block;
+      margin-left: 2px;
+      border-radius: 3px;
+      color: #4d4e4e;
+      background-color: #dddddd;
+      outline: none;
+
+      &:hover{
+        background-color: white;
+      }
+
+
+    }
+
+    .LabelTotal{
+      width: 115px;
+      margin-right: 0px;
+    }
+
+    .ShippingValue span{
+      margin-left: 0px;
+    }
+    .Grid {
+      width: 87%;
+      
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+    span {
+      margin-left: 10px;
+      margin-right:10px;
+      font-size: bold;
+    }
+    .LabelTotal {
+      font-size: 20px;
+      margin-top:13.5px;
+    }
+    .TotalRightPart {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    //   padding-top: 4px;
+    .TotalResult{
+        margin-top:17.5px;
+
+    }  
+
+    }
+
+  }
+  .Note{
+      margin-top:20px;
+      padding:5px;
+        border:0.5px solid #000;
+        box-shadow: -0.5px -0.5px 0.5px #000;
+    p{
+        text-align: left;
+    }
+  }
+
+  .orderButton{
+    backgroundColor: #dddada;
+    boxShadow: 2px 2px 1px #000;
+    width: 192px;
+    height: 50px;
+
+    span{
+      margin: 0px;
+    }
+  }
+
+
+}

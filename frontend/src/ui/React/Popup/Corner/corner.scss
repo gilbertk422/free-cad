@@ -1,0 +1,32 @@
+.Corner {
+  form {
+    padding: 10px;
+
+    p {
+      text-align: left;
+      margin-top: 10px;
+    }
+    .Block{
+        display: flex;
+        justify-content: flex-start;
+    .LeftBlock {
+     
+      .Input {
+        margin-top: 10px;
+        width: 220px;
+      }
+      .Label {
+        color: grey;
+      }
+      .TextBlock {
+        width: 190px;
+        border: 1px solid #000;
+      }
+    }
+    // .ImageBlock{
+
+    // }
+  }
+}
+
+}

@@ -1,0 +1,101 @@
+<hr>
+
+<style>
+.comment {font: 15px Arial; color:#335533;}
+</style>
+
+<script>
+var server_url = "https://www.emachineshop.com/irfqserver";
+//var server_url = "http://127.0.0.1:11000";
+</script>
+
+<h3>Submit design for quotation</h3>
+
+<form enctype='multipart/form-data' method="POST">
+<input type='hidden' name='password' value='price'/>
+
+EMSX file: <input type='file' name='design'/><br><br>
+
+Qty: <input type='text' name='pquantity' value='1'/><br><br>
+
+Material: <input type='text' name='pmaterial' value='Aluminum 2024'/> Material name - just to put into log<br> 
+
+Material ID: <input type='text' name='pmaterialid' value='313'/> EMS ID of Material<br> <br>
+
+The number if braces must be a ems finish ID or zero if no finish.<br>
+In case of multiple finishes, separate with comma like this: Brush (86), Anodize (116)<br>
+Finish: <input type='text' name='pfinish' Value='As Machined (0)'/><br> <br>
+
+
+Country: <input type='text' name='pcountry-field' value='Sweden'/></br>
+State: <input type='text' name='pstate' value=''/><br>
+<input type='hidden' name='pusername' value='webesmcad'/>
+<input type='hidden' name='puseremail' value='webemscad@emachineshop.com'/><br>
+<input type='submit' value='  GO   '  name='submit1'/><br>
+</form>
+
+<p class="comment">When the above request is submitted, server returns status json reply like this:<br>
+<br>
+{"status":"status", ..., queue_position":0,"internal_message":"Initializing  [0 of 20] (1 of 5)", ... ,"server_rfqid":"263204", ...}<br>
+<br>
+Save value of server_rfqid for further communication with server.<br>
+<br>
+You should check field "status". Possible values are:<br>
+"status": means quotation is accepted and being processed. <br>
+"error": there is an error.<br>
+</p>
+
+<h3>Get quotation result</h3>
+
+<form enctype='multipart/form-data' method="POST">
+<input type='hidden' name='password' value='price'/>
+<input name="prequest_type" type="hidden" value="result" />
+server_rfqid: <input name="prfqid" type="text" value="" /><br> 
+<input type='submit' value='  GO   '  name='submit1'/><br>
+</form>
+
+
+<p class="comment">
+When the above request is submitted, server returns either status or result of quotation when it's ready.<br>
+<br>
+The status reply is the same as after submitting design<br>
+<br>
+Progress info can be read from   "internal_message" field.<br>
+Example:  "internal_message":"Initializing  [0 of 20] (1 of 5)" the values in [...] are seconds elapsed and overall seconds estimated.<br>
+<br>
+In case quotation is ready there will be json quotation result:<br>
+<br>
+{"status":"success","errors":"",<br>
+"shipping":[{"MethodID":5,"MethodName":"UPS Worldwide","Cost":64.91}],<br>
+"price":"758.29","sw_price":"","ss_price":"","queue_position":0,"internal_message":"","warnings":"","notes":"","result_tag":"",<br>
+"input_post_data":{"prequest_type":"","pquantity":"1","pmaterial":"Aluminum 2024","psessionid":"","pdontemail":"","design_file":"bogdan-test.emsx","pmaterialid":"313","prfqid":"","pfile":"","pfinish":"As Machined (0)","pfinishid":"0","pcountry":"Sweden","pstate":"","pshipping":"","pusername":"test","puseremail":"bogdan@pad2pad.com","ptolerance":"","pthickness":"","pthicknessunits":"","punits":"","pjobnum":"","pemail_subject":"","pemail_to":"","pemail_body":"","additional_file":"","pprivilege":"","pmanual_price":"","pmanual_price_fab":"","presult_link":"","pprocess":"#SheetMetal","pprice_calc_result":"","ppowdercoatcolor":"","panodizecolor":"","pmechanicalpreferences":""},<br>
+"lead_time":"17","process":"#SheetMetal",<br>
+"sw_images":{"Default":"","Top":"","Bottom":"","Front":"","Back":"","Left":"","Right":""},<br>
+"ems_images":{"Default":"ImageViewIsometric.jpg","Top":"ImageViewTop.jpg","Bottom":"ImageViewBottom.jpg","Front":"ImageViewFront.jpg","Back":"ImageViewBack.jpg","Left":"ImageViewLeft.jpg","Right":"ImageViewRight.jpg"},<br>
+"server_rfqid":"39512137","pemso_orderid":"0","version":4,<br>
+"part":{"Volume":79105.6542765801,"SurfaceArea":25368.5943981511,"X":82.55,"Y":60.6552,"Z":60.6552},<br>
+"combos":[{"MfgPrice":758.29,"MfgDays":17,"MachineIDs":"5023","Machines":"Mill 3-Axis"},<br>
+          {"MfgPrice":1427.48,"MfgDays":7,"MachineIDs":"1384","Machines":"Mill 3-Axis"}],<br>
+"altcombos":[{"MfgPrice":369.05,"MfgDays":17,"MachineIDs":"5023","Machines":"Mill 3-Axis","Alternative":{"Material":{"ID":241,"Name":"Aluminum 5052 H32"}}},{"MfgPrice":632.05,"MfgDays":7,"MachineIDs":"1384","Machines":"Mill 3-Axis","Alternative":{"Material":{"ID":241,"Name":"Aluminum 5052 H32"}}}],<br>
+"specifications":{"Tolerance":0.762,"Flatness":76.2,"EdgeRoughness":50.8,"SurfaceRoughness":50.8,"EdgeDraft":10},<br>
+"corrections":[{"Error":"ERROR: The highlighted line must be inside the outermost light color boundary line (created in Top view).\nPlease move the highlighted line(s) inside the light color boundary line (created in top view). If it does not fit, go to the Top view and increase the Z value of the outermost line. If the line appears to be inside the boundary, zoom in for close view at edges.\nIf you are deliberately trying to add material external to the light projection line you may need to create shapes in another view with positive Z or use a larger Z value in the view generating the projection line and create shapes with negative Z to remove material. If you are trying to create a sheet metal part with one or more bends, do all drawing in the Top view and create the bends with straight lines set to the Bend line type.","Correction":"Auto Correct","ChangesMade":"Deleted lines outside bounding line projection in Right view"}],<br>
+"material_ems":"Aluminum 2024 (313)","finish_ems":"As Machined (0)"}<br>
+<br>
+The ems pricing result can be read from the "combos" field.<br>
+<br>
+In case of error the server returns<br>
+<br>
+{"status":"error"  ... }  <br>
+</p>
+
+<script>
+var formsCollection;
+var r;
+
+formsCollection=document.forms;
+
+for(r=0;r<formsCollection.length;r++)
+{
+    formsCollection[r].action = server_url;
+}
+</script>

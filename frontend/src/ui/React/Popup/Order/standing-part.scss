@@ -1,0 +1,52 @@
+.StandingPart {
+  h3.Title {
+    text-align: center;
+    background-color: #f3f3f3;
+    margin-top: 0px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  .FirstLastName {
+    display: flex;
+    justify-content: space-between;
+    .First, .Last {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+    }
+    .First{
+      margin-right: 10px;
+    }
+    &.Email {
+      @media (max-width: 600px) {
+        flex-direction: column;
+        .First, .Last {
+          width: 100%;
+        }
+        img {
+          margin-left: 0px !important;
+        }
+      }
+    }
+  }
+  .Address {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    .LabelAddress {
+      color: #000;
+      font-size: bold;
+      width: 16%;
+      text-align: right;
+      label {
+        margin-right: 10px;
+      }
+    }
+    .InputAddress {
+      width: 84%;
+      .InputFieldAddress {
+        width: 100%;
+      }
+    }
+  }
+}

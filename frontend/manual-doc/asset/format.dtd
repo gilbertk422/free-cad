@@ -1,0 +1,169 @@
+<!ENTITY % integer "CDATA"> <!-- integer number -->
+		<!ENTITY % float "CDATA">   <!-- floating point number -->
+		<!ENTITY % coord "float, float">
+
+		<!ELEMENT emachineshop3dobjects (View+, QuantityOfParts*, Finishing*, Specifications*)>
+		<!ATTLIST emachineshop3dobjects versionid CDATA>
+
+		<!ELEMENT View (Region+)>
+		<!ATTLIST View
+				Type        (Top | Bottom | Left | Right | Front | Back) #REQUIRED
+				>
+
+
+		<!ELEMENT QuantityOfParts  EMPTY>
+		<!ATTLIST QuantityOfParts
+				Value   CDATA  #REQUIRED
+				>
+
+
+		<!ELEMENT Region (Contour, Profile?, Machine?, Processing?, LaserMark?, Region* )>
+		<!ATTLIST Region
+				Id          integer             #IMPLIED
+				BaseHeight  float               #IMPLIED
+				Z           (float | AirInside) #IMPLIED
+				RelHeight   (float | AirInside) #IMPLIED
+				WallAngle   float               #IMPLIED
+				BottomType  (Drill | Flat)      #IMPLIED
+				ThroughHole (throughhole)       #IMPLIED -- all data ignored --
+				ForcedThru  (forcedthru)        #IMPLIED -- all data ignored --
+				>
+
+		<!ELEMENT Contour (Straight | Circle | Arc | Spline | Text)+>
+
+		<!ELEMENT Profile (Straight | Circle | Arc | Spline | Text)+>
+
+		<!ELEMENT Machine EMPTY>
+		<!ATTLIST Machine
+				Id      integer #IMPLIED
+				Name    CDATA   #IMPLIED
+				CTM     (0 | 1) #IMPLIED
+				LineType (Solid | Striple | Font | Arrow | Dimension) #IMPLIED -- for Comment machine lines, "Solid" if attribute is missing --
+				>
+
+		<!ELEMENT LaserMark EMPTY>
+		<!ATTLIST LaserMark
+				Type    (Outlined | Filled) #IMPLIED
+				>
+
+		<!ELEMENT Processing (FarEdge? | NearEdge? | Grove? | Bend? | Boundary? | Thread?)>
+
+		<!ELEMENT FarEdge EMPTY>
+		<!ATTLIST FarEedge
+				type   (Rounding | Chamfer) CDATA #REQUIRED
+				Radius float #REQUIRED  -- Rounding --
+				Size   float #REQUIRED  -- Chamfer --
+				Angle  float #REQUIRED  -- Chamfer --
+				>
+
+		<!ELEMENT NearEdge EMPTY>
+		<!ATTLIST NearEdge
+				Type (Rounding | Chamfer) #REQUIRED
+				Radius float #REQUIRED  -- Rounding --
+				Size   float #REQUIRED  -- Chamfer --
+				Angle  float #REQUIRED  -- Chamfer --
+				>
+
+		<!ELEMENT Groove EMPTY>
+		<!ATTLIST Groove
+				Dist    float #REQUIRED
+				Height  float #REQUIRED
+				Deep    float #REQUIRED
+				>
+
+
+		<!-- Region is single bend line -->
+		<!ELEMENT Bend EMPTY>
+		<!ATTLIST Bend
+				Angle            float #REQUIRED
+				Radius           float #REQUIRED
+				>
+
+
+		<!-- Old style: Region with bend lines -->
+		<!ELEMENT Bend EMPTY>
+		<!ATTLIST Bend
+				P1               coord #REQUIRED
+				P2               coord #REQUIRED
+				Angle            float #REQUIRED
+				Radius           float #REQUIRED
+				DegreePerSection float #IMPLIED
+				BendSide         (Left | Right)  #IMPLIED
+				>
+
+		<!ELEMENT Boundary EMPTY>
+		<!ATTLIST Boundary type (Flat | Revolution) #IMPLIED >
+
+		<!ELEMENT Thread EMPTY>
+		<!ATTLIST Thread
+				Parameters       CDATA               #REQUIRED
+				Length           (float | Maximal)   #REQUIRED
+				Type             (UN | M | NTP | UD) #IMPLIED  -- UD = UserDefined --
+				Hand             (Left | Right)      #IMPLIED
+				>
+
+
+		<!ELEMENT Straight EMPTY>
+		<!ATTLIST Straight
+				Id integer #IMPLIED
+				P1 coord   #REQUIRED
+				P2 coord   #REQUIRED
+				>
+
+		<!ELEMENT Circle>
+		<!ATTLIST Circle
+				Id     integer #IMPLIED
+				Center coord   #REQUIRED
+				Radius float   #REQUIRED
+				>
+
+		<!ELEMENT Arc EMPTY>
+		<!ATTLIST Arc
+				Id         integer #IMPLIED
+				Center     coord   #REQUIRED
+				Radius     float   #REQUIRED
+				StartAngle float   #REQUIRED
+				IncAngle   float   #REQUIRED
+				>
+
+		<!ELEMENT Spline EMPTY>
+		<!ATTLIST Spline
+				Id  integer #IMPLIED
+				P1  coord   #REQUIRED
+				P2  coord   #REQUIRED
+				P3  coord   #REQUIRED
+				P4  coord   #REQUIRED
+				>
+
+		<!ELEMENT Text (#PCDATA)>
+		<!ATTLIST Text
+				Id 				integer #IMPLIED
+				Height    float   #REQUIRED
+				Position  coord   #REQUIRED
+				HFlip     (0 | 1) #REQUIRED
+				VFlip     (0 | 1) #REQUIRED
+				FontName  CDATA   #REQUIRED
+				Angle     float   #REQUIRED
+				>
+
+
+		<!ELEMENT Finishing  (Method+)>
+
+		<!ELEMENT Method EMPTY>
+		<!ATTLIST Method
+				Id            integer  #REQUIRED
+				Name          CDATA    #REQUIRED
+				StandardColor (CDATA | RAL Color) #IMPLIED
+				SpecialColor  CDATA    #IMPLIED
+				Sides         "Top?, Bottom?, Left?, Right?, Front?, Back?" #IMPLIED  -- comma-separated list of views --
+				>
+
+		<!ELEMENT Specifications  (Specification+)>
+
+		<!ELEMENT Specification EMPTY>
+		<!ATTLIST Specification
+				MachineId     integer  #IMPLIED
+				Name          (Tolerance | Flatness | EdgeRoughness | SurfaceRoughness | EdgeDraft | MaterialThicknessTolerance)  #REQUIRED
+				Value         float    #REQUIRED
+				>
+

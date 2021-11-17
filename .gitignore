@@ -1,0 +1,9 @@
+.idea
+/npm-debug.log
+/node_modules
+/dist
+/docs
+package-lock.json
+.env
+/docker/certbot/conf
+/docker/proxy/certbot

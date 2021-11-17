@@ -1,0 +1,53 @@
+#propertyBarZInputBlock{
+  position: relative;
+  width: 104px;
+  display: flex;
+
+  input{
+    width: 100px;
+  }
+
+  span{
+    position: absolute;
+    display: block;
+    right: 7px;
+    top: 4px;
+    font-weight: 900;
+    transform: rotate(180deg);
+  }
+
+  .DropList{
+    background-color: white;
+    top: 30px;
+    left: 0;
+    position: absolute;
+    border: #b1b1b1 1px solid;
+    width: 102px;
+    max-height: 150px;
+    overflow-y: scroll;
+    overflow-x: unset;
+
+    ul{
+      margin: 0;
+      list-style: none;
+      padding: 0;
+
+      li{
+        padding-left: 6px;
+        padding-top: 2px;
+
+        &:hover{
+          background-color: #bdbdbd;
+        }
+      }
+    }
+  }
+
+  @-moz-document url-prefix() {
+    font-size: small;
+
+    .DropList {
+      width: 116px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+/npm-debug.log
+/node_modules
+/public/dist
+/public/index.html
+/docs
+.nyc_output
+package-lock.json
+.env
+

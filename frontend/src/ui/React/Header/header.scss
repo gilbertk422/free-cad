@@ -1,0 +1,24 @@
+.MobileHeader {
+    > div:nth-child(2) {
+        background-color: #e0e0e0;
+
+        > span {
+            width: 24px !important;
+            margin-left: 5px !important;
+            margin-right: 5px !important;
+            margin-top: 0px !important;
+        }
+
+        > span:nth-child(1) {
+            top: 6px !important;
+        }
+
+        > span:nth-child(2) {
+            top: 16px !important;
+        }
+
+        > span:nth-child(3) {
+            top: -9px !important;
+        }
+    }
+}

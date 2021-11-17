@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<eMachineShop3DObjects VersionId="1.1">
+ <View Type="Top">
+	<Region BaseHeight="0" Z="1.5875">
+		<Machine Id="14" Name="Comment" CTM="0"/>
+		<Contour>
+			<Text Position="116.946197,-35.028231" Height="1.366489" FontName="" HFlip="0" VFlip="0" Angle="0">Flat 2D parts cut from sheet material are the most economical.</Text>
+		</Contour>
+	</Region>
+	<Region BaseHeight="0" Z="3.175">
+		<Machine Id="41" Name="Auto"/>
+		<Contour>
+			<Straight P1="104.046393,-35.245492" P2="104.046393,-73.345492"/>
+			<Arc Center="110.396393,-73.345492" Radius="6.35" StartAngle="180" IncAngle="90"/>
+			<Straight P1="110.396393,-79.695492" P2="173.896393,-79.695492"/>
+			<Arc Center="173.896393,-73.345492" Radius="6.35" StartAngle="270" IncAngle="90"/>
+			<Straight P1="180.246393,-73.345492" P2="180.246393,-35.245492"/>
+			<Arc Center="173.896393,-35.245492" Radius="6.35" StartAngle="0" IncAngle="90"/>
+			<Straight P1="173.896393,-28.895492" P2="110.396393,-28.895492"/>
+			<Arc Center="110.396393,-35.245492" Radius="6.35" StartAngle="90" IncAngle="90"/>
+		</Contour>
+	</Region>
+	<Region BaseHeight="3.175" Z="AirInside" BottomType="Drill" ThroughHole="">
+		<Machine Id="41" Name="Auto"/>
+		<Contour>
+			<Circle Center="110.396393,-35.245492" Radius="3.175"/>
+		</Contour>
+	</Region>
+	<Region BaseHeight="3.175" Z="AirInside" BottomType="Drill" ThroughHole="">
+		<Machine Id="41" Name="Auto"/>
+		<Contour>
+			<Circle Center="173.896393,-35.245492" Radius="3.175"/>
+		</Contour>
+	</Region>
+	<Region BaseHeight="3.175" Z="AirInside" ThroughHole="">
+		<Machine Id="41" Name="Auto"/>
+		<Contour>
+			<Straight P1="123.096393,-54.295492" P2="123.096393,-66.995492"/>
+			<Straight P1="123.096393,-66.995492" P2="161.196393,-66.995492"/>
+			<Straight P1="161.196393,-66.995492" P2="161.196393,-54.295492"/>
+			<Straight P1="161.196393,-54.295492" P2="123.096393,-54.295492"/>
+		</Contour>
+	</Region>
+	<Region BaseHeight="0" Z="0">
+		<Machine Id="14" Name="Comment" CTM="0"/>
+		<Contour>
+			<Straight P1="104.023593,-48.522347" P2="110.015249,-46.593998"/>
+		</Contour>
+	</Region>
+	<Region BaseHeight="0" Z="1.5875">
+		<Machine Id="14" Name="Comment" CTM="0"/>
+		<Contour>
+			<Text Position="111.367758,-46.62892" Height="0.996557" FontName="" HFlip="0" VFlip="0" Angle="0">Click on this line and notice that the Z value is set to .125 which sets the thickness of the sheet to 1/8 inch.</Text>
+		</Contour>
+	</Region>
+	<Region BaseHeight="0" Z="1.5875">
+		<Machine Id="14" Name="Comment" CTM="0"/>
+		<Contour>
+			<Text Position="119.916966,-50.072415" Height="0.996557" FontName="" HFlip="0" VFlip="0" Angle="0">Click on this line and notice that the Z value is Air Inside which create a thru feature</Text>
+		</Contour>
+	</Region>
+	<Region BaseHeight="0" Z="1.5875">
+		<Machine Id="14" Name="Comment" CTM="0"/>
+		<Contour>
+			<Straight P1="142.146393,-54.295492" P2="142.146393,-50.817145"/>
+		</Contour>
+	</Region>
+	<Region BaseHeight="0" Z="1.5875">
+		<Machine Id="14" Name="Comment" CTM="0"/>
+		<Contour>
+			<Text Position="124.763894,-40.108231" Height="1.366489" FontName="" HFlip="0" VFlip="0" Angle="0">Click the pyramid button to see the 3D view.</Text>
+		</Contour>
+	</Region>
+	<Region BaseHeight="0" Z="0">
+		<Machine Id="14" Name="Comment" CTM="0"/>
+		<Contour>
+			<Straight P1="105.897486,-77.567696" P2="111.889143,-75.639347"/>
+		</Contour>
+	</Region>
+	<Region BaseHeight="0" Z="1.5875">
+		<Machine Id="14" Name="Comment" CTM="0"/>
+		<Contour>
+			<Text Position="112.921097,-76.057071" Height="0.996557" FontName="" HFlip="0" VFlip="0" Angle="0">Rounding was done by drawing a rectangle and using the Round corner button.</Text>
+		</Contour>
+	</Region>
+ </View>
+ <QuantityOfParts Value="100"/>
+</eMachineShop3DObjects>

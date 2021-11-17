@@ -1,0 +1,14 @@
+$base-color: #0164cd;
+$base-lower-color: #016bec;
+$additional-color: white;
+
+body{
+  --main-color: black;
+  --base-color: #4d4e4e;
+  --base-lower-color: #adadad;
+
+  svg.icon{
+    width: 24px;
+    height: 24px;
+  }
+}

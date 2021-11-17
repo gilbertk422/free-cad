@@ -1,0 +1,830 @@
+{
+  "EmsSignature":true,
+  "GenerationDate":"2019-04-19",
+  "PriceFileNumber":22,
+  "PriceFileVersion":1933,
+  "Materials":[
+    {
+      "id":138,
+      "name":"ABS Black",
+      "type":"ABS",
+      "designation":"",
+      "condition":"",
+      "color":"Black",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":true
+    },
+    {
+      "id":244,
+      "name":"ABS For Molding",
+      "type":"ABS",
+      "designation":"",
+      "condition":"For Molding",
+      "color":"Choice",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":true
+    },
+    {
+      "id":221,
+      "name":"Acetal Black",
+      "type":"Acetal",
+      "designation":"",
+      "condition":"",
+      "color":"Black",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":true
+    },
+    {
+      "id":276,
+      "name":"Acetal For Molding",
+      "type":"Acetal",
+      "designation":"",
+      "condition":"For Molding",
+      "color":"Choice",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":true
+    },
+    {
+      "id":34,
+      "name":"Acetal White",
+      "type":"Acetal",
+      "designation":"",
+      "condition":"",
+      "color":"White",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":298,
+      "name":"Acrylic Clear",
+      "type":"Acrylic",
+      "designation":"",
+      "condition":"",
+      "color":"Clear",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":3,
+      "name":"Aluminum 1100 H14",
+      "type":"Aluminum",
+      "designation":"1100",
+      "condition":"H14",
+      "color":"",
+      "group":"Aluminum (incl alloys)",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":313,
+      "name":"Aluminum 2024 T351",
+      "type":"Aluminum",
+      "designation":"2024",
+      "condition":"T351",
+      "color":"",
+      "group":"Aluminum (incl alloys)",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":241,
+      "name":"Aluminum 5052 H32",
+      "type":"Aluminum",
+      "designation":"5052",
+      "condition":"H32",
+      "color":"",
+      "group":"Aluminum (incl alloys)",
+      "class":"Metal",
+      "recommended":true
+    },
+    {
+      "id":5,
+      "name":"Aluminum 6061 T6",
+      "type":"Aluminum",
+      "designation":"6061",
+      "condition":"T6",
+      "color":"",
+      "group":"Aluminum (incl alloys)",
+      "class":"Metal",
+      "recommended":true
+    },
+    {
+      "id":75,
+      "name":"Aluminum 6063 T5",
+      "type":"Aluminum",
+      "designation":"6063",
+      "condition":"T5",
+      "color":"",
+      "group":"Aluminum (incl alloys)",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":461,
+      "name":"Aluminum 6351 T6",
+      "type":"Aluminum",
+      "designation":"6351",
+      "condition":"T6",
+      "color":"",
+      "group":"Aluminum (incl alloys)",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":43,
+      "name":"Aluminum 7075 T6",
+      "type":"Aluminum",
+      "designation":"7075",
+      "condition":"T6",
+      "color":"",
+      "group":"Aluminum (incl alloys)",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":463,
+      "name":"Aluminum 7075 T651",
+      "type":"Aluminum",
+      "designation":"7075",
+      "condition":"T651",
+      "color":"",
+      "group":"Aluminum (incl alloys)",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":95,
+      "name":"Brass 260 H02",
+      "type":"Brass",
+      "designation":"260",
+      "condition":"H02",
+      "color":"",
+      "group":"Brass \/ Bronze Soft",
+      "class":"Metal",
+      "recommended":true
+    },
+    {
+      "id":16,
+      "name":"Brass 360",
+      "type":"Brass",
+      "designation":"360",
+      "condition":"",
+      "color":"",
+      "group":"Brass \/ Bronze Soft",
+      "class":"Metal",
+      "recommended":true
+    },
+    {
+      "id":356,
+      "name":"Carbon Fiber Black",
+      "type":"Carbon Fiber",
+      "designation":"",
+      "condition":"",
+      "color":"Black",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":459,
+      "name":"Copper 101",
+      "type":"Copper",
+      "designation":"101",
+      "condition":"",
+      "color":"",
+      "group":"Copper \/ Copper Alloys",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":96,
+      "name":"Copper 110",
+      "type":"Copper",
+      "designation":"110",
+      "condition":"",
+      "color":"",
+      "group":"Copper \/ Copper Alloys",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":40,
+      "name":"Fluoropolymer White",
+      "type":"Fluoropolymer",
+      "designation":"",
+      "condition":"",
+      "color":"White",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":465,
+      "name":"NBR Nitrile Black",
+      "type":"NBR Nitrile",
+      "designation":"",
+      "condition":"",
+      "color":"Black",
+      "group":"Rubber",
+      "class":"Rubber",
+      "recommended":false
+    },
+    {
+      "id":476,
+      "name":"NBR Nitrile For Molding",
+      "type":"NBR Nitrile",
+      "designation":"",
+      "condition":"For Molding",
+      "color":"Choice",
+      "group":"Rubber",
+      "class":"Rubber",
+      "recommended":true
+    },
+    {
+      "id":464,
+      "name":"Neoprene Black",
+      "type":"Neoprene",
+      "designation":"",
+      "condition":"",
+      "color":"Black",
+      "group":"Rubber",
+      "class":"Rubber",
+      "recommended":false
+    },
+    {
+      "id":475,
+      "name":"Neoprene For Molding",
+      "type":"Neoprene",
+      "designation":"",
+      "condition":"For Molding",
+      "color":"Choice",
+      "group":"Rubber",
+      "class":"Rubber",
+      "recommended":false
+    },
+    {
+      "id":247,
+      "name":"Nylon 6\/6 For Molding",
+      "type":"Nylon",
+      "designation":"6\/6",
+      "condition":"For Molding",
+      "color":"Choice",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":329,
+      "name":"Nylon 6\/6 Natural",
+      "type":"Nylon",
+      "designation":"6\/6",
+      "condition":"",
+      "color":"Natural",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":331,
+      "name":"Nylon Cast 6 Black",
+      "type":"Nylon",
+      "designation":"Cast 6",
+      "condition":"",
+      "color":"Black",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":220,
+      "name":"Nylon MC-901 Blue",
+      "type":"Nylon",
+      "designation":"MC-901",
+      "condition":"",
+      "color":"Blue",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":218,
+      "name":"Nylon OILON Green",
+      "type":"Nylon",
+      "designation":"OILON",
+      "condition":"",
+      "color":"Green",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":474,
+      "name":"Nylon PA 2200 3D Printing White",
+      "type":"Nylon",
+      "designation":"PA 2200",
+      "condition":"3D Printing",
+      "color":"White",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":true
+    },
+    {
+      "id":140,
+      "name":"Polycarbonate Clear",
+      "type":"Polycarbonate",
+      "designation":"",
+      "condition":"",
+      "color":"Clear",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":229,
+      "name":"Polycarbonate For Molding",
+      "type":"Polycarbonate",
+      "designation":"",
+      "condition":"For Molding",
+      "color":"Choice",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":332,
+      "name":"Polyethylene HDPE - High Density White",
+      "type":"Polyethylene",
+      "designation":"HDPE - High Density",
+      "condition":"",
+      "color":"White",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":223,
+      "name":"Polypropylene For Molding",
+      "type":"Polypropylene",
+      "designation":"",
+      "condition":"For Molding",
+      "color":"Choice",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":335,
+      "name":"Polypropylene White",
+      "type":"Polypropylene",
+      "designation":"",
+      "condition":"",
+      "color":"White",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":253,
+      "name":"Polystyrene For Molding",
+      "type":"Polystyrene",
+      "designation":"",
+      "condition":"For Molding",
+      "color":"Choice",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":336,
+      "name":"Polystyrene White",
+      "type":"Polystyrene",
+      "designation":"",
+      "condition":"",
+      "color":"White",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":27,
+      "name":"PVC Type 1 Gray",
+      "type":"PVC",
+      "designation":"Type 1",
+      "condition":"",
+      "color":"Gray",
+      "group":"Plastic and related materials",
+      "class":"Plastics",
+      "recommended":false
+    },
+    {
+      "id":466,
+      "name":"Silicone Black",
+      "type":"Silicone",
+      "designation":"",
+      "condition":"",
+      "color":"Black",
+      "group":"Rubber",
+      "class":"Rubber",
+      "recommended":false
+    },
+    {
+      "id":238,
+      "name":"Silicone For Molding",
+      "type":"Silicone",
+      "designation":"",
+      "condition":"For Molding",
+      "color":"Choice",
+      "group":"Rubber",
+      "class":"Rubber",
+      "recommended":true
+    },
+    {
+      "id":345,
+      "name":"Stainless 301",
+      "type":"Stainless",
+      "designation":"301",
+      "condition":"",
+      "color":"",
+      "group":"Stainless Steels, Medium",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":458,
+      "name":"Stainless 303 Annealed",
+      "type":"Stainless",
+      "designation":"303",
+      "condition":"Annealed",
+      "color":"",
+      "group":"Stainless Steels, Medium",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":347,
+      "name":"Stainless 304 Annealed",
+      "type":"Stainless",
+      "designation":"304",
+      "condition":"Annealed",
+      "color":"",
+      "group":"Stainless Steels, Hard",
+      "class":"Metal",
+      "recommended":true
+    },
+    {
+      "id":50,
+      "name":"Stainless 316\/316L",
+      "type":"Stainless",
+      "designation":"316\/316L",
+      "condition":"",
+      "color":"",
+      "group":"Stainless Steels, Hard",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":89,
+      "name":"Stainless 410",
+      "type":"Stainless",
+      "designation":"410",
+      "condition":"",
+      "color":"",
+      "group":"Stainless Steels, Medium",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":90,
+      "name":"Stainless 416",
+      "type":"Stainless",
+      "designation":"416",
+      "condition":"",
+      "color":"",
+      "group":"Stainless Steels, Medium",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":20,
+      "name":"Steel 1008\/1018 Cold rolled",
+      "type":"Steel",
+      "designation":"1008\/1018",
+      "condition":"Cold rolled",
+      "color":"",
+      "group":"Steel, Low Carbon",
+      "class":"Metal",
+      "recommended":true
+    },
+    {
+      "id":48,
+      "name":"Steel 1095 Dark blue",
+      "type":"Steel",
+      "designation":"1095",
+      "condition":"",
+      "color":"Dark blue",
+      "group":"Steel, Hardened",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":352,
+      "name":"Steel 12L14 Ledloy",
+      "type":"Steel",
+      "designation":"12L14",
+      "condition":"Ledloy",
+      "color":"",
+      "group":"Steel, Low Carbon",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":261,
+      "name":"Steel 4130",
+      "type":"Steel",
+      "designation":"4130",
+      "condition":"",
+      "color":"",
+      "group":"Steel, Low Carbon",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":353,
+      "name":"Steel 4140 Annealed",
+      "type":"Steel",
+      "designation":"4140",
+      "condition":"Annealed",
+      "color":"",
+      "group":"Steel, Low Carbon",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":21,
+      "name":"Steel A36 Hot rolled",
+      "type":"Steel",
+      "designation":"A36",
+      "condition":"Hot rolled",
+      "color":"",
+      "group":"Steel, Low Carbon",
+      "class":"Metal",
+      "recommended":true
+    },
+    {
+      "id":165,
+      "name":"Steel D2\/HCHCr",
+      "type":"Steel",
+      "designation":"D2\/HCHCr",
+      "condition":"",
+      "color":"",
+      "group":"Steel, Tool",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":355,
+      "name":"Steel O1 Oil-Hardened",
+      "type":"Steel",
+      "designation":"O1",
+      "condition":"Oil-Hardened",
+      "color":"",
+      "group":"Steel, Hardened",
+      "class":"Metal",
+      "recommended":false
+    },
+    {
+      "id":46,
+      "name":"Titanium Grade 2",
+      "type":"Titanium",
+      "designation":"Grade 2",
+      "condition":"",
+      "color":"",
+      "group":"Titanium Alloys",
+      "class":"Metal",
+      "recommended":false
+    }
+  ],
+  "Finishes":[
+    {
+      "id":206,
+      "name":"Alodine, Clear",
+      "fullName":"Plating Rack - Alodine, Clear",
+      "type":"Plating Rack"
+    },
+    {
+      "id":213,
+      "name":"Alodine, Yellow",
+      "fullName":"Plating Rack - Alodine, Yellow",
+      "type":"Plating Rack"
+    },
+    {
+      "id":151,
+      "name":"Anodize, Clear",
+      "fullName":"Plating Rack - Anodize, Clear",
+      "type":"Plating Rack",
+      "showName": "Anodize - Clear"
+    },
+    {
+      "id":221,
+      "name":"Anodize, Hardcoat Black Satin .002\" min",
+      "fullName":"Plating Rack - Anodize, Hardcoat Black Satin .002\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":116,
+      "name":"Anodize, Hardcoat Non Dyed Satin .002\" min",
+      "fullName":"Plating Rack - Anodize, Hardcoat Non Dyed Satin .002\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":89,
+      "name":"Anodize, Sulfuric Dyed Black Satin .0004\" min",
+      "fullName":"Plating Rack - Anodize, Sulfuric Dyed Black Satin .0004\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":91,
+      "name":"Anodize, Sulfuric Dyed Blue Satin .0004\" min",
+      "fullName":"Plating Rack - Anodize, Sulfuric Dyed Blue Satin .0004\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":225,
+      "name":"Anodize, Sulfuric Dyed Bronze Satin .0004\" min",
+      "fullName":"Plating Rack - Anodize, Sulfuric Dyed Bronze Satin .0004\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":90,
+      "name":"Anodize, Sulfuric Dyed Gold Satin .0004\" min",
+      "fullName":"Plating Rack - Anodize, Sulfuric Dyed Gold Satin .0004\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":222,
+      "name":"Anodize, Sulfuric Dyed Gray Satin .0004\" min",
+      "fullName":"Plating Rack - Anodize, Sulfuric Dyed Gray Satin .0004\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":223,
+      "name":"Anodize, Sulfuric Dyed Green Satin .0004\" min",
+      "fullName":"Plating Rack - Anodize, Sulfuric Dyed Green Satin .0004\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":224,
+      "name":"Anodize, Sulfuric Dyed Orange Satin .0004\" min",
+      "fullName":"Plating Rack - Anodize, Sulfuric Dyed Orange Satin .0004\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":88,
+      "name":"Anodize, Sulfuric Dyed Red Satin .0004\" min",
+      "fullName":"Plating Rack - Anodize, Sulfuric Dyed Red Satin .0004\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":4,
+      "name":"Copper .0001\" min",
+      "fullName":"Plating Rack - Copper .0001\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":155,
+      "name":"Copper .0005\" min",
+      "fullName":"Plating Rack - Copper .0005\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":1,
+      "name":"Nickel, Bright .0010\"",
+      "fullName":"Plating Rack - Nickel, Bright .0010\"",
+      "type":"Plating Rack",
+      "showName": "Nickel - Bright"
+    },
+    {
+      "id":60,
+      "name":"Nickel, Electroless .0005\" min",
+      "fullName":"Plating Rack - Nickel, Electroless .0005\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":219,
+      "name":"Passivate",
+      "fullName":"Plating Rack - Passivate",
+      "type":"Plating Rack"
+    },
+    {
+      "id":22,
+      "name":"Zinc, no supplementary treatment .0005\" min",
+      "fullName":"Plating Rack - Zinc, no supplementary treatment .0005\" min",
+      "type":"Plating Rack"
+    },
+    {
+      "id":37,
+      "name":"Black Oxide",
+      "fullName":"Oxide - Black Oxide",
+      "type":"Oxide"
+    },
+    {
+      "id":118,
+      "name":"Powder Coat - UV stabilized",
+      "fullName":"Powder Coat - UV stabilized",
+      "type":"Powder coat"
+    },
+    {
+      "id":100,
+      "name":"Bead blast",
+      "fullName":"Mechanical - Bead blast",
+      "type":"Mechanical"
+    },
+    {
+      "id":65,
+      "name":"Brush flat surface",
+      "fullName":"Mechanical - Brush flat surface",
+      "type":"Mechanical",
+      "showName": "Brushed"
+    },
+    {
+      "id":92,
+      "name":"Buff Polish (6\" wheel), Mirror",
+      "fullName":"Mechanical - Buff Polish (6\" wheel), Mirror",
+      "type":"Mechanical"
+    },
+    {
+      "id":204,
+      "name":"Buff Polish (6\" wheel), Satin",
+      "fullName":"Mechanical - Buff Polish (6\" wheel), Satin",
+      "type":"Mechanical"
+    },
+    {
+      "id":220,
+      "name":"Machined",
+      "fullName":"Mechanical - Machined",
+      "type":"Mechanical"
+    },
+    {
+      "id":205,
+      "name":"Vibratory polish",
+      "fullName":"Mechanical - Vibratory polish",
+      "type":"Mechanical"
+    }
+  ],
+  "Compatible": [
+    {
+      "MaterialId": 221,
+      "FinishesIds": []
+    },{
+      "MaterialId": 298,
+      "FinishesIds": []
+    },{
+      "MaterialId": 241,
+      "FinishesIds": [118, 65, 151]
+    },{
+      "MaterialId": 5,
+      "FinishesIds": [118, 65, 151]
+    },{
+      "MaterialId": 43,
+      "FinishesIds": [118, 65, 151]
+    },{
+      "MaterialId": 463,
+      "FinishesIds": [118, 65, 151]
+    },{
+      "MaterialId": 95,
+      "FinishesIds": [65]
+    },{
+      "MaterialId": 96,
+      "FinishesIds": [65,1]
+    },{
+      "MaterialId": 40,
+      "FinishesIds": []
+    },{
+      "MaterialId": 464,
+      "FinishesIds": []
+    },{
+      "MaterialId": 347,
+      "FinishesIds": [65]
+    },{
+      "MaterialId": 50,
+      "FinishesIds": [65]
+    },{
+      "MaterialId": 20,
+      "FinishesIds": [118, 65, 1]
+    },{
+      "MaterialId": 21,
+      "FinishesIds": [118, 65, 1]
+    },{
+      "MaterialId": 46,
+      "FinishesIds": [65]
+    }
+  ]
+}
+
+

@@ -1,0 +1,50 @@
+.ToolsPanel {
+    display: flex;
+    justify-content: space-between;
+    min-height: 30px;
+    max-height: 30px;
+    margin-bottom: 10px;
+    z-index: 2;
+    button {
+        display:inline;
+        padding-top: 2px;
+        background-color: rgba(240, 240, 240, 0.85);
+        border: none;
+        &:hover {
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+
+    input {
+        width: 80px;
+    }
+
+    .Left-Tools {
+        display: flex;
+        flex-direction: row;
+        #text{
+            width: 200px;
+        }
+    }
+
+    .Right-Tools {
+        display: flex;
+        flex-direction: row;
+        margin-right: 3px;
+    }
+
+
+    @media (max-width: 1210px) {
+        height: 60px;
+        min-height: unset;
+        max-height: unset;
+        flex-wrap:wrap;
+        align-items: baseline;
+        z-index: 2;
+    }
+
+}
+.css-1hwfws3{
+    height: 26px;
+}

@@ -1,0 +1,33 @@
+.LeftMenu {
+  // margin-top: 140px;
+  //margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  button {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 4px;
+    background-color: #f0f0f0d9;
+    border: none;
+    outline: none;
+    text-align: left;
+    &:hover {
+      background-color: rgba(64, 64, 64, 0.3);
+      cursor:pointer;
+      border-radius: 5px;
+    }
+
+    &.active{
+      border-radius: 50px;
+      background-color: rgba(64, 64, 64, 0.4);
+    }
+  }
+  // .leftTooltipBackgroundTheme{
+  //     background: rgb(243, 204, 132) !important;
+  //     opacity: 0.6;
+  //     color: black;
+  //     margin-left:50px;
+  //     margin-top:50px;
+
+  // }
+}

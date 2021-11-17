@@ -1,0 +1,21 @@
+.OrderOptions{
+    .RadioButton{
+        padding-bottom:10px;
+        border-bottom: 1px solid #000;
+    }
+    .Text{
+        // padding-bottom:5px;
+        border-bottom: 1px solid #000;
+        .Textarea{
+            margin:0;
+            padding:0;
+        }
+    }
+    .InputOrder{
+        padding:10px;
+    }
+}
+
+.primary{
+    color:orangered;
+}

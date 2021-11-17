@@ -1,0 +1,74 @@
+.Auto, .CommentsToSelf {
+  .AutoTitle {
+    text-align: left;
+    margin-left:10px;
+  }
+  .RadiButtonsFieldset,
+  .AngleInputFieldset,
+  .Checkbox,.RadioFarEdge {
+    display:flex;
+    flex-direction: column;
+    .RadioButtons {
+      display: flex;
+      padding: 10px;
+      // border: 1px solid #000;
+      .RadioButtonsElelemt {
+        width: 20%;
+      }
+      .RadioButtonsContent {
+        width: 80%;
+        .Chamfer {
+          display: flex;
+          justify-content: flex-start;
+          margin-left: 15px;
+          .Inputs {
+            margin-left: 20px;
+
+            .InputSizeGroup {
+              margin-bottom: 10px;
+              .InputSize {
+                margin-left: 26px;
+                width: 200px;
+              }
+            }
+            .InputSelectAngleGroup,
+            .InputSelectRadiusGroup {
+              display: flex;
+              justify-content: flex-start;
+              .InputSelectAngle,
+              .InputSelectRadius {
+                margin-left: 15px;
+              }
+            }
+          }
+          .InputAngle {
+            margin-left: 70px;
+            .InputSelectAngleGroup2{
+              display: flex;
+              justify-content: flex-start;
+              .InputSelectAngle2 {
+                margin-left: 15px;
+              }
+              .Parameters{
+                margin-left: 30px;
+
+              }
+        
+            }
+            .InputFarEdge{
+              margin-left:-20px;
+              display: flex;
+              justify-content: flex-start;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.root {
+  margin: -5px 0;
+  padding: 0;
+  // border:1px solid red;
+}

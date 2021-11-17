@@ -1,0 +1,50 @@
+.RadialButtons {
+  position: absolute;
+  bottom: 180px;
+  left: 20px;
+
+  @media (max-height: 500px) {
+    bottom: 100px;
+  }
+
+  z-index: 15;
+
+  .MainButton, .Button{
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    &:active{
+      background-color: #cfb29a;
+    }
+  }
+  .MainButton{
+    transition: all 0.5s ease-out;
+  }
+  transition: all 0.5s ease-out;
+
+  img{
+    height: 30px;
+    width: 30px;
+  }
+}
+.open{
+
+  bottom: 250px;
+  left: 100px;
+
+  @media (max-height: 500px) {
+    bottom: 180px;
+  }
+
+  .MainButton{
+    height: 100px;
+    width: 100px;
+    transform: translate(-25px, -25px);
+  }
+}

@@ -1,0 +1,36 @@
+div{
+p{
+    text-align: center;
+    padding:0;
+    margin:2px;
+}
+
+.New{
+    padding:15px;
+    height:100%;
+    margin:0;
+    display:flex;
+    justify-content: flex-start;
+    .Menu{
+        width:20%;
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0; 
+            color:orange;
+            li{
+                .BlankDisign, .Tutorial, .FrontPanel,.BoltPlate{
+                    font-size: 15px;
+                    text-decoration: none;
+                    color:#000;
+                }
+            }   
+        }
+    }
+    .Content{
+        width:80%;
+//         min-height: 100%;
+// border:1px solid #000;
+    }
+}
+}

@@ -1,0 +1,77 @@
+.UpMenu {
+  display: flex;
+  flex-direction: column;
+  // margin-top: 30px;
+  .Drop {
+    background-color: lightgrey;
+  }
+  .Buttons {
+    display: inline-flex;
+    justify-content: space-between;
+    min-width: 100vw;
+    .LeftButtonGroup {
+      display: flex;
+      flex-direction: row;
+      .btn-group-two {
+        display: flex;
+        justify-content: space-between;
+        button {
+          width: 35px;
+          height: 34px;
+          margin-right: 2px;
+          // background-color: rgba(240,240,240,0.85);
+          background-color: transparent;
+
+          border: none;
+          &:hover {
+            background-color: white;
+            cursor: pointer;
+          }
+        }
+      }
+      .btn-group-three {
+        display: flex;
+        justify-content: space-between;
+        button {
+          width: 34px;
+          height: 34px;
+          margin-right: 2px;
+          background-color: transparent;
+
+          border: none;
+          &:hover {
+            background-color: white;
+            cursor: pointer;
+          }
+        }
+      }
+      .btn-group-other {
+        display: flex;
+        justify-content: space-between;
+        button {
+          width: 35px;
+          height: 34px;
+          margin-left: 5px;
+          background-color: transparent;
+
+          border: none;
+          &:hover {
+            background-color: white;
+            cursor: pointer;
+          }
+        }
+      }
+      .btn-group-last {
+        margin-bottom: 3px;
+        display: flex;
+        min-width: 400px;  
+      }
+    }
+    .RightButtons {
+      display: inline-flex;
+      margin-bottom: 3px;
+      justify-content: flex-end;
+      min-width: 350px;
+    }
+  }
+}

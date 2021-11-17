@@ -1,0 +1,348 @@
+{
+  "properties": [
+    "type",
+    "metric",
+    "threadRadius",
+    "typeOfComment",
+    "bendAngle",
+    "lineLength",
+    "lineAngle",
+    "radius",
+    "startAngle",
+    "insideAngle",
+    "textSize",
+    "width",
+    "height",
+    "text",
+    "font",
+    "Z"
+  ],
+  "templates": {
+    "autoGroup": [
+      "type",
+      "width",
+      "height",
+      "Z"
+    ],
+    "commentGroup": [
+      "type",
+      "width",
+      "height"
+    ],
+    "typeCommentGroup": [
+      "type",
+      "typeOfComment",
+      "width",
+      "height"
+    ]
+  },
+  "rules": [
+    {
+      "element": "Arc",
+      "countElements": "1",
+      "lineType": "Auto",
+      "properties": [
+        "type",
+        "radius",
+        "startAngle",
+        "insideAngle",
+        "Z"
+      ]
+    },
+    {
+      "element": "Arc",
+      "countElements": "*",
+      "lineType": "Auto",
+      "template": "autoGroup"
+    },
+    {
+      "element": "Circle",
+      "countElements": "1",
+      "lineType": "Auto",
+      "properties": [
+        "type",
+        "radius",
+        "Z"
+      ]
+    },
+    {
+      "element": "Circle",
+      "countElements": "*",
+      "lineType": "Auto",
+      "properties": [
+        "type",
+        "radius",
+        "width",
+        "height",
+        "Z"
+      ]
+    },
+    {
+      "element": "Line",
+      "countElements": "1",
+      "lineType": "Auto",
+      "properties": [
+        "type",
+        "lineLength",
+        "lineAngle",
+        "Z"
+      ]
+    },
+    {
+      "element": "Line",
+      "countElements": "*",
+      "lineType": "Auto",
+      "template": "autoGroup"
+    },
+    {
+      "element": "Spline",
+      "countElements": "1",
+      "lineType": "Auto",
+      "properties": [
+        "type",
+        "Z"
+      ]
+    },
+    {
+      "element": "Spline",
+      "countElements": "*",
+      "lineType": "Auto",
+      "template": "autoGroup"
+    },
+    {
+      "element": "Text",
+      "countElements": "1",
+      "lineType": "Auto",
+      "properties": [
+        "type",
+        "textSize",
+        "text",
+        "font",
+        "Z"
+      ]
+    },
+    {
+      "element": "Text",
+      "countElements": "*",
+      "lineType": "Auto",
+      "properties": [
+        "type",
+        "textSize",
+        "width",
+        "height",
+        "Z"
+      ]
+    },
+    {
+      "element": "Group",
+      "countElements": "~",
+      "lineType": "Auto",
+      "template": "autoGroup"
+    },
+    {
+      "element": "Multiple",
+      "countElements": "~",
+      "lineType": "Auto",
+      "template": "autoGroup"
+    },
+
+
+    {
+      "element": "Arc",
+      "countElements": "1",
+      "lineType": "Comment",
+      "properties": [
+        "type",
+        "typeOfComment",
+        "radius",
+        "startAngle",
+        "insideAngle"
+      ]
+    },
+    {
+      "element": "Arc",
+      "countElements": "*",
+      "lineType": "Comment",
+      "template": "typeCommentGroup"
+    },
+    {
+      "element": "Circle",
+      "countElements": "1",
+      "lineType": "Comment",
+      "properties": [
+        "type",
+        "typeOfComment",
+        "radius"
+      ]
+    },
+    {
+      "element": "Circle",
+      "countElements": "*",
+      "lineType": "Comment",
+      "properties": [
+        "type",
+        "typeOfComment",
+        "radius",
+        "width",
+        "height"
+      ]
+    },
+    {
+      "element": "Line",
+      "countElements": "1",
+      "lineType": "Comment",
+      "properties": [
+        "type",
+        "typeOfComment",
+        "lineLength",
+        "lineAngle"
+      ]
+    },
+    {
+      "element": "Line",
+      "countElements": "*",
+      "lineType": "Comment",
+      "template": "typeCommentGroup"
+    },
+    {
+      "element": "Spline",
+      "countElements": "1",
+      "lineType": "Comment",
+      "properties": [
+        "type",
+        "typeOfComment"
+      ]
+    },
+    {
+      "element": "Spline",
+      "countElements": "*",
+      "lineType": "Comment",
+      "template": "typeCommentGroup"
+    },
+    {
+      "element": "Text",
+      "countElements": "1",
+      "lineType": "Comment",
+      "properties": [
+        "type",
+        "textSize",
+        "text"
+      ]
+    },
+    {
+      "element": "Text",
+      "countElements": "*",
+      "lineType": "Comment",
+      "properties": [
+        "type",
+        "textSize",
+        "width",
+        "height"
+      ]
+    },
+    {
+      "element": "Group",
+      "countElements": "~",
+      "lineType": "Comment",
+      "template": "typeCommentGroup"
+    },
+    {
+      "element": "Multiple",
+      "countElements": "~",
+      "lineType": "Comment",
+      "template": "commentGroup"
+    },
+
+    {
+      "element": "Circle",
+      "countElements": "~",
+      "lineType": "Thread",
+      "properties": [
+        "type",
+        "metric",
+        "threadRadius"
+      ]
+    },
+    {
+      "element": "Multiple",
+      "countElements": "~",
+      "lineType": "Thread",
+      "template": "commentGroup"
+    },
+
+
+    {
+      "element": "Line",
+      "countElements": "1",
+      "lineType": "Bend",
+      "properties": [
+        "type",
+        "bendAngle",
+        "lineLength",
+        "lineAngle"
+      ]
+    },
+    {
+      "element": "Line",
+      "countElements": "*",
+      "lineType": "Bend",
+      "template": "commentGroup"
+    },
+    {
+      "element": "Multiple",
+      "countElements": "~",
+      "lineType": "Bend",
+      "template": "commentGroup"
+    },
+
+
+
+    {
+      "element": "Arc",
+      "countElements": "~",
+      "lineType": "Multiple",
+      "template": "commentGroup"
+    },
+    {
+      "element": "Circle",
+      "countElements": "~",
+      "lineType": "Multiple",
+      "template": "commentGroup"
+    },
+    {
+      "element": "Line",
+      "countElements": "~",
+      "lineType": "Multiple",
+      "template": "commentGroup"
+    },
+    {
+      "element": "Spline",
+      "countElements": "~",
+      "lineType": "Multiple",
+      "template": "commentGroup"
+    },
+    {
+      "element": "Text",
+      "countElements": "~",
+      "lineType": "Multiple",
+      "properties": [
+        "type",
+        "textSize",
+        "width",
+        "height"
+      ]
+    },
+    {
+      "element": "Group",
+      "countElements": "~",
+      "lineType": "Multiple",
+      "template": "commentGroup"
+    },
+    {
+      "element": "Multiple",
+      "countElements": "~",
+      "lineType": "Multiple",
+      "template": "commentGroup"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+.RoutingPart {
+  .Menu {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+      padding-left: 0; /*убираем левый отступ, равный 40px*/
+      .CreditCard,
+      .PrepayByCheck,
+      .PurchaseOrder {
+        text-decoration: none;
+        display: block;
+        color: #000;
+        font-size: 17px;
+        padding: 7px 9px;
+      }
+      .CreditCard,
+      .PrepayByCheck {
+        border-right: 1px solid rgb(175, 175, 175);
+      }
+    }
+  }
+  .Content {
+    div {
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+    }
+    .rccs {
+      margin: 0px;
+    }
+    .CreditCardContent {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      .LeftContent,
+      .RightContent {
+        .Input {
+          label {
+            .InpitField {
+              width: 220px;
+            }
+          }
+        }
+        .Month-Year-CW {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+          align-items: center;
+          .SelectMonth {
+            margin-left: 45px;
+            select {
+              margin-left: 5px;
+            }
+          }
+          .SelectYear {
+            select {
+              margin-left: 5px;
+            }
+          }
+          label {
+            .CW {
+              width: 40px;
+            }
+          }
+        }
+        //   .Cards{
+        //       display:flex;
+        //       justify-content: space-around;
+        //       img{
+        //           display:block;
+        //       }
+        //   }
+      }
+    }
+    .PurchaseOrder {
+      .Text {
+        text-align: left;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

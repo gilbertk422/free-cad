@@ -1,0 +1,48 @@
+
+body, #app, .appContainer{
+  padding: 0px;
+  margin: 0px;
+  height:100vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #efefef;
+  overflow: hidden;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.appContainer{
+
+  section{
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    .mainCanvas{
+      display: flex;
+      flex: 1 0 auto;
+    }
+  }
+}
+
+.root-LeftMenu {
+  position: relative;
+  z-index: 90;
+  top: 100px;
+}
+
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}

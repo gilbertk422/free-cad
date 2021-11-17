@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+
+  web:
+    container_name: cad_web_dev
+    build:
+      context: ./docker/web
+    ports:
+      - 81:80
+    volumes:
+      - ./frontend/public:/var/www/app
+
+  back:
+    container_name: cad_back_dev
+    build:
+      context: ./docker/back
+    ports:
+      - 8081:80
+    volumes:
+      - ./backend:/var/www/app
+      - ./docker/back/init.sh:/usr/local/bin/init_back.sh
+
+  node:
+    container_name: node
+    image: "node:8"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./frontend:/home/node/app
+    expose:
+      - "8081"
+    command: "/bin/sh -c 'npm install && npm start'"

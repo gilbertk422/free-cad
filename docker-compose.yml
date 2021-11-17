@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    restart: unless-stopped
+    volumes:
+      - ./docker/proxy/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./docker/proxy/certbot:/etc/letsencrypt
+    ports:
+      - 80:80
+      - 443:443
+      - 8080:8080
+    links:
+      - web
+      - back
+    command: '/bin/sh -c ''while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g "daemon off;"'''
+
+  web:
+    container_name: cad_web
+    build:
+      context: ./docker/web
+    volumes:
+      - ./frontend/public:/var/www/app
+
+  back:
+    container_name: cad_back
+    build:
+      context: ./docker/back
+    volumes:
+      - ./backend:/var/www/app
+      - ./docker/back/init.sh:/usr/local/bin/init_back.sh

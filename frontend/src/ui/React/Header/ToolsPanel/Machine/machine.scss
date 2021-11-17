@@ -1,0 +1,61 @@
+.Machine {
+  padding: 20px;
+  .TitleTop {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .MenuAndContenet {
+    display: flex;
+    justify-content: flex-start;
+    .MenuTitle {
+      text-align: left;
+      margin-left: 10px;
+    }
+    .Menu {
+      width: 25%;
+      // position: relative;
+      // height: 100%;
+      // background-color:white;
+      // border:1px solid black;
+      .Menu-UL {
+     
+        padding:5px;
+        margin: 5px;
+        padding-bottom:600px;
+        // margin-bottom:5px;
+        // height: 100%;
+        background-color: white;
+        // border: 1px solid black;
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          color: orange;
+          li {
+            .Auto,
+            .Tap,
+            .Bend,
+            .LazerMark,
+            .ToSelf,
+            .ToMachinist {
+              font-size: 18px;
+              text-decoration: none;
+              color: #000;
+            }
+            // .ToMachinist {
+            //   font-size: 16px;
+            //   text-decoration: none;
+            //   color: #000;
+            // }
+          }
+        }
+      }
+    }
+    .Content {
+      width: 75%;
+
+      // margin-left: 0px;
+    }
+  }
+}

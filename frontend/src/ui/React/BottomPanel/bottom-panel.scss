@@ -1,0 +1,68 @@
+.BottomPanel {
+  height: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font: icon;
+  background-color: #e0e0e0;
+  border-top: 1px #cecece solid;
+  color: #313131;
+  align-items: center;
+  .MouseCoordinates {
+    margin-right: 10px;
+    min-width: 350px;
+    text-align: end;
+    .MouseX {
+      margin-right: 5px;
+    }
+  }
+  .FileNameLabel{
+    min-width: 350px;
+  }
+
+  a{
+    text-decoration: none;
+    color:#0164cd;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .suggestionsBorderButton{
+    width: 0px;
+    height: 0px;
+    position: relative;
+    bottom: 50px;
+    right: 140px;
+
+    &>div{
+      color: white;
+      background-color: #0164cd;
+      opacity: 0.5;
+      border-radius: 20px;
+      display: flex;
+      z-index: 1000;
+      width: 120px;
+      padding: 2px 10px;
+      align-items: center;
+      --base-color: white;
+
+      &:hover{
+        opacity: 1;
+        cursor: pointer;
+      }
+
+    }
+  }
+
+}
+@media not screen  and (min-width: 1024px){
+  .BottomPanel {
+    display: none!important;
+
+    .MouseCoordinates {
+        display: none!important;
+    }
+  }
+ 
+}

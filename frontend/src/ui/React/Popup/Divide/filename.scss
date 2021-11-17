@@ -1,0 +1,15 @@
+#file-name-modal{
+  #alert-dialog-title{
+    padding-left: 24px;
+  }
+  input {
+    width: 350px;
+    line-height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}
